@@ -56,8 +56,8 @@ class _MyAppState extends State<MyApp> {
                           if (_formKey.currentState!.validate()) {
                             setState(() {
                               todoList = [
+                                myController.value.text.toString(),
                                 ...todoList,
-                                myController.value.text.toString()
                               ];
                             });
                             myController.value =
